@@ -10,8 +10,9 @@ let calling=()=>{
     h1.innerHTML=second;
     second--;
 }
-//call back hell 
+//load event to execute the callback funciton after the page is fully get loaded.
 addEventListener("load",()=>{
+//call back hell 
 setTimeout(() => {
     calling();
     setTimeout(() => {
