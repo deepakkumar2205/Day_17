@@ -11,6 +11,7 @@ let calling=()=>{
     second--;
 }
 //call back hell 
+addEventListener("load",()=>{
 setTimeout(() => {
     calling();
     setTimeout(() => {
@@ -47,3 +48,4 @@ setTimeout(() => {
         }, time);
     }, time);
 }, time);
+})
